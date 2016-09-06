@@ -13,11 +13,11 @@ class MessageResponder
   end
 
   def respond
-    on /^\/start/ do
+    on /\A\/start/ do
       answer_with_greeting_message
     end
 
-    on /^\/stop/ do
+    on /\A\/stop/ do
       answer_with_farewell_message
     end
   end

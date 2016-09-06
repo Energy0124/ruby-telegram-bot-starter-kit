@@ -8,7 +8,7 @@ require './lib/app_configurator'
 config = AppConfigurator.new
 config.configure
 
-token = config.get_token
+token = config.get_telegram_token
 logger = config.get_logger
 
 logger.debug 'Starting telegram bot'
